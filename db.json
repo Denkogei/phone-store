@@ -1,405 +1,420 @@
 {
-    "phones": [
-      {
-        "id": "1",
-        "name": "iPhone 13 Pro Max",
-        "description": "6.7-inch display, A15 Bionic chip, 12MP camera, 128GB storage, Graphite color.",
-        "price": 999,
-        "image": "https://phonesstorekenya.com/wp-content/uploads/2021/09/Apple-iPhone-13-Pro-Max.jpg",
-        "status": "available"
-      },
-      {
-        "id": "2",
-        "name": "Samsung Galaxy S21 Ultra",
-        "description": "6.8-inch display, Exynos 2100, 108MP camera, 256GB storage, Phantom Black color.",
-        "price": 849,
-        "image": "https://angkormeas.com/wp-content/uploads/2024/07/used_21ultra_v9.jpg",
-        "status": "available"
-      },
-      {
-        "id": "3",
-        "name": "Google Pixel 6 Pro",
-        "description": "6.7-inch LTPO OLED, Google Tensor chip, 50MP camera, 128GB storage, Stormy Black color.",
-        "price": 799,
-        "image": "https://www.phonestablets.co.ke/wp-content/uploads/2021/09/Google-Pixel-6-Pro-Stormy-Black.jpg.webp",
-        "status": "out of stock"
-      },
-      {
-        "id": "4",
-        "name": "OnePlus 9 Pro",
-        "description": "6.7-inch AMOLED, Snapdragon 888, 48MP camera, 256GB storage, Morning Mist color.",
-        "price": 949,
-        "image": "https://getwired.co.ke/wp-content/uploads/2021/04/OnePlus-9-Pro-Stellar-Black-1.jpg",
-        "status": "available"
-      },
-      {
-        "id": "5",
-        "name": "Xiaomi Mi 11 Ultra",
-        "description": "6.81-inch AMOLED, Snapdragon 888, 50MP camera, 256GB storage, Cosmic Black color.",
-        "price": 849,
-        "image": "https://www.instok.co.ke/image/cache/products/a049dbf99d5eb31f9b6250602a7f5331-600x600.jpg",
-        "status": "available"
-      },
-      {
-        "id": "6",
-        "name": "Apple iPhone 12 Mini",
-        "description": "5.4-inch display, A14 Bionic chip, 12MP camera, 64GB storage, Blue color.",
-        "price": 699,
-        "image": "https://www.digitalstore.co.ke/cdn/shop/products/apple-iphone-12-mini-64gb-i3.jpg?v=1635521528",
-        "status": "out of stock"
-      },
-      {
-        "id": "7",
-        "name": "Samsung Galaxy Note 20 Ultra",
-        "description": "6.9-inch Dynamic AMOLED, Exynos 990, 108MP camera, 256GB storage, Mystic Bronze color.",
-        "price": 999,
-        "image": "https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/76/2146251/1.jpg?7851",
-        "status": "available"
-      },
-      {
-        "id": "8",
-        "name": "Oppo Find X3 Pro",
-        "description": "6.7-inch AMOLED, Snapdragon 888, 50MP camera, 256GB storage, Gloss Black color.",
-        "price": 929,
-        "image": "https://www.humtechke.com/wp-content/uploads/2022/07/Oppo-Find-X3.jpg",
-        "status": "available"
-      },
-      {
-        "id": "9",
-        "name": "Sony Xperia 1 II",
-        "description": "6.5-inch OLED, Snapdragon 865, 12MP camera, 256GB storage, Black color.",
-        "price": 899,
-        "image": "https://fdn2.gsmarena.com/vv/bigpic/sony-xperia-1-iii.jpg",
-        "status": "out of stock"
-      },
-      {
-        "id": "10",
-        "name": "Asus ROG Phone 5",
-        "description": "6.78-inch AMOLED, Snapdragon 888, 64MP camera, 256GB storage, Phantom Black color.",
-        "price": 1099,
-        "image": "https://www.phonestablets.co.ke/wp-content/uploads/2021/09/gsmarena_001-5.jpg",
-        "status": "available"
-      },
-      {
-        "id": "11",
-        "name": "iPhone 11 Pro Max",
-        "description": "6.5-inch OLED display, A13 Bionic chip, 12MP triple camera system, 64GB storage.",
-        "price": 799,
-        "image": "https://phonesstorekenya.com/wp-content/uploads/2019/09/Apple-iPhone-11-Pro-Gray.jpg",
-        "status": "available"
-      },
-      {
-        "id": "12",
-        "name": "Samsung Galaxy S20 FE",
-        "description": "6.5-inch AMOLED, Exynos 990, 12MP camera, 128GB storage, Cloud Mint color.",
-        "price": 599,
-        "image": "https://gadgetcentral.co.ke/wp-content/uploads/2020/10/1-PACKSHOT-S20-FE-1-600x600.jpg",
-        "status": "available"
-      },
-      {
-        "id": "13",
-        "name": "Google Pixel 5",
-        "description": "6.0-inch OLED, Snapdragon 765G, 16MP camera, 128GB storage, Just Black color.",
-        "price": 499,
-        "image": "https://images-cdn.ubuy.com.sa/633b6ae9222a330933163022-used-google-pixel-5-fully-unlocked.jpg",
-        "status": "out of stock"
-      },
-      {
-        "id": "14",
-        "name": "OnePlus 8T",
-        "description": "6.55-inch Fluid AMOLED, Snapdragon 865, 48MP quad-camera setup, 128GB storage.",
-        "price": 569,
-        "image": "https://m.media-amazon.com/images/I/71Tob9uP2XL.jpg",
-        "status": "available"
-      },
-      {
-        "id": "15",
-        "name": "Xiaomi Redmi Note 10 Pro",
-        "description": "6.67-inch AMOLED, Snapdragon 732G, 108MP camera, 128GB storage, Onyx Gray color.",
-        "price": 299,
-        "image": "https://images-cdn.ubuy.co.in/6457677d5b51cc09e728586d-redmi-xiaomi-note-10-pro-5g-hd-voice.jpg",
-        "status": "available"
-      },
-      {
-        "id": "16",
-        "name": "Motorola Edge Plus",
-        "description": "6.7-inch OLED, Snapdragon 865, 108MP camera, 256GB storage, Thunder Gray color.",
-        "price": 999,
-        "image": "https://i5.walmartimages.com/seo/Motorola-Edge-2022-4800mAh-Battery-Unlocked-Made-for-US-8-512GB-50MP-Camera-Cosmos-Blue_eebc3082-ac82-40c6-9bf1-3bf5d02a9fe4.866e741d718bae5190c30ed3901331ed.jpeg",
-        "status": "available"
-      },
-      {
-        "id": "17",
-        "name": "Sony Xperia 10 II",
-        "description": "6.0-inch OLED, Snapdragon 665, 12MP triple camera, 128GB storage, Black color.",
-        "price": 399,
-        "image": "https://api.priceinkenya.com/media/123089/conversions/sony-xperia-10-ii-4gb128gb-VoybwJudNa-original.webp",
-        "status": "available"
-      },
-      {
-        "id": "18",
-        "name": "Nokia 8.3 5G",
-        "description": "6.81-inch IPS LCD, Snapdragon 765G, 64MP quad-camera, 128GB storage, Polar Night color.",
-        "price": 499,
-        "image": "https://images.ctfassets.net/wcfotm6rrl7u/12hVmTabVOfaZX2orFYnwn/7317299d96cf5c43dfbfe8491bbf7016/nokia-8_3_5G-polar_night-front_back-int.png?h=1000&fm=png&fl=png8",
-        "status": "out of stock"
-      },
-      {
-        "id": "19",
-        "name": "LG Velvet",
-        "description": "6.8-inch P-OLED, Snapdragon 765G, 48MP camera, 128GB storage, Aurora Gray color.",
-        "price": 599,
-        "image": "https://m.media-amazon.com/images/I/61+UJTngkiS._AC_UF894,1000_QL80_.jpg",
-        "status": "available"
-      },
-      {
-        "id": "20",
-        "name": "Realme GT",
-        "description": "6.43-inch Super AMOLED, Snapdragon 870, 64MP triple camera, 128GB storage, Racing Yellow color.",
-        "price": 399,
-        "image": "https://cdn-ilbllbp.nitrocdn.com/izJvrWecYqVMOgGbOvJyNRZTOQGpONoc/assets/images/optimized/rev-527a764/www.mobilehub.co.ke/storage/2023/09/realme-gt-master-a-600x600-1-2.jpg",
-        "status": "available"
-      },
-      {
-        "id": "21",
-        "name": "iPhone SE 2020",
-        "description": "4.7-inch Retina HD display, A13 Bionic chip, 12MP camera, 64GB storage, Red color.",
-        "price": 399,
-        "image": "https://www.phoneplacekenya.com/wp-content/uploads/2020/04/Apple-iPhone-SE-2020.jpg",
-        "status": "available"
-      },
-      {
-        "id": "22",
-        "name": "Samsung Galaxy Z Fold 3",
-        "description": "7.6-inch Dynamic AMOLED, Snapdragon 888, 12MP camera, 256GB storage, Phantom Black color.",
-        "price": 1799,
-        "image": "https://zurimall.co.ke/wp-content/uploads/2024/04/Samsung-Galaxy-Z-Fold-3-b.jpg",
-        "status": "available"
-      },
-      {
-        "id": "23",
-        "name": "Huawei Mate 40 Pro",
-        "description": "6.76-inch OLED, Kirin 9000, 50MP camera, 256GB storage, Mystic Silver color.",
-        "price": 1199,
-        "image": "https://api.priceinkenya.com/media/123249/conversions/huawei-mate-40-pro-8gb256gb-MpY3BkLYtF-original.webp",
-        "status": "available"
-      },
-      {
-        "id": "24",
-        "name": "Honor Magic 3 Pro",
-        "description": "6.76-inch OLED, Snapdragon 888+, 50MP camera, 256GB storage, Black color.",
-        "price": 999,
-        "image": "https://mobilochka.ae/image/cache/dd92cf46fbc641d436b0e8ed504836e3.jpg",
-        "status": "available"
-      },
-      {
-        "id": "25",
-        "name": "Apple iPhone XR",
-        "description": "6.1-inch Liquid Retina display, A12 Bionic chip, 12MP camera, 64GB storage, Yellow color.",
-        "price": 549,
-        "image": "https://www.apple.com/newsroom/images/product/iphone/standard/iPhone_XR_black-back_09122018_carousel.jpg.large.jpg",
-        "status": "available"
-      },
-      {
-        "id": "26",
-        "name": "Samsung Galaxy A52",
-        "description": "6.5-inch Super AMOLED, Snapdragon 720G, 64MP camera, 128GB storage, Awesome Black color.",
-        "price": 350,
-        "image": "https://www.phoneplacekenya.com/wp-content/uploads/2021/03/Samsung-Galaxy-A52-c.jpg",
-        "status": "available"
-      },
-      {
-        "id": "27",
-        "name": "Xiaomi Poco X3 Pro",
-        "description": "6.67-inch IPS LCD, Snapdragon 860, 48MP camera, 128GB storage, Phantom Black color.",
-        "price": 249,
-        "image": "https://phonesstorekenya.com/wp-content/uploads/2021/03/Xiaomi-Poco-X3-Pro-a.jpg",
-        "status": "available"
-      },
-      {
-        "id": "28",
-        "name": "Realme 8 Pro",
-        "description": "6.4-inch Super AMOLED, Snapdragon 720G, 108MP camera, 128GB storage, Infinite Blue color.",
-        "price": 269,
-        "image": "https://phonesstorekenya.com/wp-content/uploads/2021/06/Realme-8-a.jpg",
-        "status": "available"
-      },
-      {
-        "id": "29",
-        "name": "Vivo X60 Pro",
-        "description": "6.56-inch AMOLED, Snapdragon 870, 48MP camera, 256GB storage, Midnight Black color.",
-        "price": 799,
-        "image": "https://www.phoneplacekenya.com/wp-content/uploads/2021/09/Vivo-X60-Pro.jpg",
-        "status": "available"
-      },
-      {
-        "id": "30",
-        "name": "Asus Zenfone 8",
-        "description": "5.9-inch AMOLED, Snapdragon 888, 64MP camera, 128GB storage, Horizon Silver color.",
-        "price": 799,
-        "image": "https://www.notebookcheck.net/fileadmin/_processed_/4/4/csm_Asus_Zenfone_8_1_f4b476962c.png",
-        "status": "available"
-      },
-      {
-        "id": "31",
-        "name": "iPhone 12 Pro",
-        "description": "6.1-inch OLED display, A14 Bionic chip, 12MP triple camera system, 128GB storage.",
-        "price": 999,
-        "image": "https://www.phoneplacekenya.com/wp-content/uploads/2020/08/Apple-iPhone-12-Pro-Max.jpg",
-        "status": "available"
-      },
-      {
-        "id": "32",
-        "name": "Samsung Galaxy Z Flip 3",
-        "description": "6.7-inch Dynamic AMOLED, Snapdragon 888, 12MP camera, 128GB storage, Phantom Black color.",
-        "price": 999,
-        "image": "https://www.pricepoint.co.ke/wp-content/uploads/2021/07/Samsung-Galaxy-Z-Flip-3-j.jpg",
-        "status": "available"
-      },
-      {
-        "id": "33",
-        "name": "Google Pixel 4a",
-        "description": "5.81-inch OLED, Snapdragon 730G, 12MP camera, 128GB storage, Just Black color.",
-        "price": 349,
-        "image": "https://mobileprokenya.odoo.com/web/image/product.template/1878/image_1024?unique=a0bee9b",
-        "status": "available"
-      },
-      {
-        "id": "34",
-        "name": "Huawei P40 Pro",
-        "description": "6.58-inch OLED, Kirin 990, 50MP quad-camera, 256GB storage, Silver Frost color.",
-        "price": 999,
-        "image": "https://avechi.co.ke/mogefov/2021/06/Huawei-P40-Pro-d-1.jpg",
-        "status": "available"
-      },
-      {
-        "id": "35",
-        "name": "Samsung Galaxy A72",
-        "description": "6.7-inch Super AMOLED, Snapdragon 720G, 64MP camera, 128GB storage, Awesome Blue color.",
-        "price": 449,
-        "image": "https://images-na.ssl-images-amazon.com/images/I/413iElIiSbS._UL500_.jpg",
-        "status": "available"
-      },
-      {
-        "id": "36",
-        "name": "Realme Narzo 30 Pro",
-        "description": "6.5-inch IPS LCD, MediaTek Dimensity 800U, 48MP camera, 64GB storage, Black color.",
-        "price": 199,
-        "image": "https://www.phonestablets.co.ke/wp-content/uploads/2021/04/Realme-Narzo-30-Pro-2-Display-Back.jpg",
-        "status": "available"
-      },
-      {
-        "id": "37",
-        "name": "Xiaomi Mi 10T Pro",
-        "description": "6.67-inch IPS LCD, Snapdragon 865, 108MP camera, 128GB storage, Lunar Silver color.",
-        "price": 549,
-        "image": "https://www.phoneplacekenya.com/wp-content/uploads/2021/02/Xiaomi-Mi-10T-Pro-5G.jpg",
-        "status": "available"
-      },
-      {
-        "id": "38",
-        "name": "OnePlus Nord 2",
-        "description": "6.43-inch AMOLED, MediaTek Dimensity 1200, 50MP camera, 128GB storage, Gray Sierra color.",
-        "price": 399,
-        "image": "https://www.cityhub.co.ke/wp-content/uploads/2024/08/OnePlus-Nord-2-5G-b-400x400-1-e1724762893253.jpg",
-        "status": "available"
-      },
-      {
-        "id": "39",
-        "name": "Apple iPhone 8",
-        "description": "4.7-inch Retina display, A11 Bionic chip, 12MP camera, 64GB storage, Space Gray color.",
-        "price": 299,
-        "image": "https://phonesstorekenya.com/wp-content/uploads/2018/09/Apple-iPhone-8-Black.jpg",
-        "status": "available"
-      },
-      {
-        "id": "40",
-        "name": "Nokia 7.2",
-        "description": "6.3-inch IPS LCD, Snapdragon 660, 48MP triple camera, 128GB storage, Charcoal color.",
-        "price": 299,
-        "image": "https://nairobiultrabooks.odoo.com/web/image/product.template/2768/image_1024?unique=e3d1549",
-        "status": "available"
-      },
-      {
-        "id": "41",
-        "name": "Oppo Reno 4 Pro",
-        "description": "6.5-inch AMOLED, Snapdragon 720G, 48MP camera, 128GB storage, Starry Night color.",
-        "price": 499,
-        "image": "https://api.priceinkenya.com/media/122681/conversions/oppo-reno-4-pro-4g-8gb128gb-qbYp5dCqDC-original.webp",
-        "status": "available"
-      },
-      {
-        "id": "42",
-        "name": "Vivo V20 Pro",
-        "description": "6.44-inch AMOLED, Snapdragon 765G, 44MP dual camera, 128GB storage, Sunset Melody color.",
-        "price": 459,
-        "image": "https://5.imimg.com/data5/SELLER/Default/2021/4/KK/OY/FZ/51998494/vivo-v20.jpeg",
-        "status": "available"
-      },
-      {
-        "id": "43",
-        "name": "Xiaomi Mi Mix 4",
-        "description": "6.67-inch AMOLED, Snapdragon 888+, 108MP camera, 256GB storage, Ceramic Black color.",
-        "price": 1099,
-        "image": "https://xiaomitime.com/wp-content/themes/xiaomiuiwp/assets/phones/devicephotos/odin_3.webp",
-        "status": "available"
-      },
-      {
-        "id": "44",
-        "name": "Apple iPhone XS",
-        "description": "5.8-inch Super Retina OLED display, A12 Bionic chip, 12MP camera, 64GB storage.",
-        "price": 649,
-        "image": "https://smartworldkenya.com/public/uploads/products/meta/WllAtE013TbVIxEcS0yzRBamAn5TtnyI5OHYXySd.jpeg",
-        "status": "available"
-      },
-      {
-        "id": "45",
-        "name": "Samsung Galaxy M51",
-        "description": "6.7-inch Super AMOLED, Snapdragon 730G, 64MP camera, 128GB storage, Black color.",
-        "price": 379,
-        "image": "https://www.phonestablets.co.ke/wp-content/uploads/2021/08/Samsung-Galaxy-M51-2.jpg",
-        "status": "available"
-      },
-      {
-        "id": "46",
-        "name": "Realme X50 Pro",
-        "description": "6.44-inch Super AMOLED, Snapdragon 865, 64MP camera, 128GB storage, Green color.",
-        "price": 549,
-        "image": "https://cellularkenya.co.ke/wp-content/uploads/2022/05/Realme-X50-Pro-5G-Moss-Green.jpg",
-        "status": "available"
-      },
-      {
-        "id": "47",
-        "name": "Google Pixel 4 XL",
-        "description": "6.3-inch OLED, Snapdragon 855, 16MP camera, 64GB storage, Just Black color.",
-        "price": 749,
-        "image": "https://www.priceinkenya.com/_ipx/b_%23ffffff,f_png,q_75,fit_contain,s_300x300/https://api.priceinkenya.com/media/121892/conversions/google-pixel-4-xl-6gb128gb-LVuHJ382qe-original.webp",
-        "status": "available"
-      },
-      {
-        "id": "48",
-        "name": "Asus Zenfone 7 Pro",
-        "description": "6.67-inch AMOLED, Snapdragon 865+, 64MP camera, 256GB storage, Black color.",
-        "price": 849,
-        "image": "https://cdn.dxomark.com/wp-content/uploads/medias/post-54152/ZenFone-7_pro.jpg",
-        "status": "available"
-      },
-      {
-        "id": "49",
-        "name": "Samsung Galaxy A51",
-        "description": "6.5-inch Super AMOLED, Exynos 9611, 48MP quad-camera, 64GB storage, Prism Crush Black color.",
-        "price": 299,
-        "image": "https://m.media-amazon.com/images/I/61pwpYcjYlL._AC_SL1000_.jpg",
-        "status": "available"
-      },
-      {
-        "id": "50",
-        "name": "Xiaomi Mi 9T",
-        "description": "6.39-inch AMOLED, Snapdragon 730, 48MP camera, 128GB storage, Carbon Black color.",
-        "price": 329,
-        "image": "https://saruk.co.ke/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdm0idgzwi%2Fimage%2Fupload%2Fv1707220090%2Fs6iubmy9jgwsmfpebzt6.jpg&w=640&q=75",
-        "status": "available"
-      }
-    ]
-  }
-  
+  "phones": [
+    {
+      "id": "1",
+      "name": "iPhone 13 Pro Max",
+      "description": "6.7-inch display, A15 Bionic chip, 12MP camera, 128GB storage, Graphite color.",
+      "price": 999,
+      "image": "https://phonesstorekenya.com/wp-content/uploads/2021/09/Apple-iPhone-13-Pro-Max.jpg",
+      "status": "available"
+    },
+    {
+      "id": "2",
+      "name": "Samsung Galaxy S21 Ultra",
+      "description": "6.8-inch display, Exynos 2100, 108MP camera, 256GB storage, Phantom Black color.",
+      "price": 849,
+      "image": "https://angkormeas.com/wp-content/uploads/2024/07/used_21ultra_v9.jpg",
+      "status": "available"
+    },
+    {
+      "id": "3",
+      "name": "Google Pixel 6 Pro",
+      "description": "6.7-inch LTPO OLED, Google Tensor chip, 50MP camera, 128GB storage, Stormy Black color.",
+      "price": 799,
+      "image": "https://www.phonestablets.co.ke/wp-content/uploads/2021/09/Google-Pixel-6-Pro-Stormy-Black.jpg.webp",
+      "status": "out of stock"
+    },
+    {
+      "id": "4",
+      "name": "OnePlus 9 Pro",
+      "description": "6.7-inch AMOLED, Snapdragon 888, 48MP camera, 256GB storage, Morning Mist color.",
+      "price": 949,
+      "image": "https://getwired.co.ke/wp-content/uploads/2021/04/OnePlus-9-Pro-Stellar-Black-1.jpg",
+      "status": "available"
+    },
+    {
+      "id": "5",
+      "name": "Xiaomi Mi 11 Ultra",
+      "description": "6.81-inch AMOLED, Snapdragon 888, 50MP camera, 256GB storage, Cosmic Black color.",
+      "price": 849,
+      "image": "https://www.instok.co.ke/image/cache/products/a049dbf99d5eb31f9b6250602a7f5331-600x600.jpg",
+      "status": "available"
+    },
+    {
+      "id": "6",
+      "name": "Apple iPhone 12 Mini",
+      "description": "5.4-inch display, A14 Bionic chip, 12MP camera, 64GB storage, Blue color.",
+      "price": 699,
+      "image": "https://www.digitalstore.co.ke/cdn/shop/products/apple-iphone-12-mini-64gb-i3.jpg?v=1635521528",
+      "status": "out of stock"
+    },
+    {
+      "id": "7",
+      "name": "Samsung Galaxy Note 20 Ultra",
+      "description": "6.9-inch Dynamic AMOLED, Exynos 990, 108MP camera, 256GB storage, Mystic Bronze color.",
+      "price": 999,
+      "image": "https://ke.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/76/2146251/1.jpg?7851",
+      "status": "available"
+    },
+    {
+      "id": "8",
+      "name": "Oppo Find X3 Pro",
+      "description": "6.7-inch AMOLED, Snapdragon 888, 50MP camera, 256GB storage, Gloss Black color.",
+      "price": 929,
+      "image": "https://www.humtechke.com/wp-content/uploads/2022/07/Oppo-Find-X3.jpg",
+      "status": "available"
+    },
+    {
+      "id": "9",
+      "name": "Sony Xperia 1 II",
+      "description": "6.5-inch OLED, Snapdragon 865, 12MP camera, 256GB storage, Black color.",
+      "price": 899,
+      "image": "https://fdn2.gsmarena.com/vv/bigpic/sony-xperia-1-iii.jpg",
+      "status": "out of stock"
+    },
+    {
+      "id": "10",
+      "name": "Asus ROG Phone 5",
+      "description": "6.78-inch AMOLED, Snapdragon 888, 64MP camera, 256GB storage, Phantom Black color.",
+      "price": 1099,
+      "image": "https://www.phonestablets.co.ke/wp-content/uploads/2021/09/gsmarena_001-5.jpg",
+      "status": "available"
+    },
+    {
+      "id": "11",
+      "name": "iPhone 11 Pro Max",
+      "description": "6.5-inch OLED display, A13 Bionic chip, 12MP triple camera system, 64GB storage.",
+      "price": 799,
+      "image": "https://phonesstorekenya.com/wp-content/uploads/2019/09/Apple-iPhone-11-Pro-Gray.jpg",
+      "status": "available"
+    },
+    {
+      "id": "12",
+      "name": "Samsung Galaxy S20 FE",
+      "description": "6.5-inch AMOLED, Exynos 990, 12MP camera, 128GB storage, Cloud Mint color.",
+      "price": 599,
+      "image": "https://gadgetcentral.co.ke/wp-content/uploads/2020/10/1-PACKSHOT-S20-FE-1-600x600.jpg",
+      "status": "available"
+    },
+    {
+      "id": "13",
+      "name": "Google Pixel 5",
+      "description": "6.0-inch OLED, Snapdragon 765G, 16MP camera, 128GB storage, Just Black color.",
+      "price": 499,
+      "image": "https://images-cdn.ubuy.com.sa/633b6ae9222a330933163022-used-google-pixel-5-fully-unlocked.jpg",
+      "status": "out of stock"
+    },
+    {
+      "id": "14",
+      "name": "OnePlus 8T",
+      "description": "6.55-inch Fluid AMOLED, Snapdragon 865, 48MP quad-camera setup, 128GB storage.",
+      "price": 569,
+      "image": "https://m.media-amazon.com/images/I/71Tob9uP2XL.jpg",
+      "status": "available"
+    },
+    {
+      "id": "15",
+      "name": "Xiaomi Redmi Note 10 Pro",
+      "description": "6.67-inch AMOLED, Snapdragon 732G, 108MP camera, 128GB storage, Onyx Gray color.",
+      "price": 299,
+      "image": "https://images-cdn.ubuy.co.in/6457677d5b51cc09e728586d-redmi-xiaomi-note-10-pro-5g-hd-voice.jpg",
+      "status": "available"
+    },
+    {
+      "id": "16",
+      "name": "Motorola Edge Plus",
+      "description": "6.7-inch OLED, Snapdragon 865, 108MP camera, 256GB storage, Thunder Gray color.",
+      "price": 999,
+      "image": "https://i5.walmartimages.com/seo/Motorola-Edge-2022-4800mAh-Battery-Unlocked-Made-for-US-8-512GB-50MP-Camera-Cosmos-Blue_eebc3082-ac82-40c6-9bf1-3bf5d02a9fe4.866e741d718bae5190c30ed3901331ed.jpeg",
+      "status": "available"
+    },
+    {
+      "id": "17",
+      "name": "Sony Xperia 10 II",
+      "description": "6.0-inch OLED, Snapdragon 665, 12MP triple camera, 128GB storage, Black color.",
+      "price": 399,
+      "image": "https://api.priceinkenya.com/media/123089/conversions/sony-xperia-10-ii-4gb128gb-VoybwJudNa-original.webp",
+      "status": "available"
+    },
+    {
+      "id": "18",
+      "name": "Nokia 8.3 5G",
+      "description": "6.81-inch IPS LCD, Snapdragon 765G, 64MP quad-camera, 128GB storage, Polar Night color.",
+      "price": 499,
+      "image": "https://images.ctfassets.net/wcfotm6rrl7u/12hVmTabVOfaZX2orFYnwn/7317299d96cf5c43dfbfe8491bbf7016/nokia-8_3_5G-polar_night-front_back-int.png?h=1000&fm=png&fl=png8",
+      "status": "out of stock"
+    },
+    {
+      "id": "19",
+      "name": "LG Velvet",
+      "description": "6.8-inch P-OLED, Snapdragon 765G, 48MP camera, 128GB storage, Aurora Gray color.",
+      "price": 599,
+      "image": "https://m.media-amazon.com/images/I/61+UJTngkiS._AC_UF894,1000_QL80_.jpg",
+      "status": "available"
+    },
+    {
+      "id": "20",
+      "name": "Realme GT",
+      "description": "6.43-inch Super AMOLED, Snapdragon 870, 64MP triple camera, 128GB storage, Racing Yellow color.",
+      "price": 399,
+      "image": "https://cdn-ilbllbp.nitrocdn.com/izJvrWecYqVMOgGbOvJyNRZTOQGpONoc/assets/images/optimized/rev-527a764/www.mobilehub.co.ke/storage/2023/09/realme-gt-master-a-600x600-1-2.jpg",
+      "status": "available"
+    },
+    {
+      "id": "21",
+      "name": "iPhone SE 2020",
+      "description": "4.7-inch Retina HD display, A13 Bionic chip, 12MP camera, 64GB storage, Red color.",
+      "price": 399,
+      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2020/04/Apple-iPhone-SE-2020.jpg",
+      "status": "available"
+    },
+    {
+      "id": "22",
+      "name": "Samsung Galaxy Z Fold 3",
+      "description": "7.6-inch Dynamic AMOLED, Snapdragon 888, 12MP camera, 256GB storage, Phantom Black color.",
+      "price": 1799,
+      "image": "https://zurimall.co.ke/wp-content/uploads/2024/04/Samsung-Galaxy-Z-Fold-3-b.jpg",
+      "status": "available"
+    },
+    {
+      "id": "23",
+      "name": "Huawei Mate 40 Pro",
+      "description": "6.76-inch OLED, Kirin 9000, 50MP camera, 256GB storage, Mystic Silver color.",
+      "price": 1199,
+      "image": "https://api.priceinkenya.com/media/123249/conversions/huawei-mate-40-pro-8gb256gb-MpY3BkLYtF-original.webp",
+      "status": "available"
+    },
+    {
+      "id": "24",
+      "name": "Honor Magic 3 Pro",
+      "description": "6.76-inch OLED, Snapdragon 888+, 50MP camera, 256GB storage, Black color.",
+      "price": 999,
+      "image": "https://mobilochka.ae/image/cache/dd92cf46fbc641d436b0e8ed504836e3.jpg",
+      "status": "available"
+    },
+    {
+      "id": "25",
+      "name": "Apple iPhone XR",
+      "description": "6.1-inch Liquid Retina display, A12 Bionic chip, 12MP camera, 64GB storage, Yellow color.",
+      "price": 549,
+      "image": "https://www.apple.com/newsroom/images/product/iphone/standard/iPhone_XR_black-back_09122018_carousel.jpg.large.jpg",
+      "status": "available"
+    },
+    {
+      "id": "26",
+      "name": "Samsung Galaxy A52",
+      "description": "6.5-inch Super AMOLED, Snapdragon 720G, 64MP camera, 128GB storage, Awesome Black color.",
+      "price": 350,
+      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2021/03/Samsung-Galaxy-A52-c.jpg",
+      "status": "available"
+    },
+    {
+      "id": "27",
+      "name": "Xiaomi Poco X3 Pro",
+      "description": "6.67-inch IPS LCD, Snapdragon 860, 48MP camera, 128GB storage, Phantom Black color.",
+      "price": 249,
+      "image": "https://phonesstorekenya.com/wp-content/uploads/2021/03/Xiaomi-Poco-X3-Pro-a.jpg",
+      "status": "available"
+    },
+    {
+      "id": "28",
+      "name": "Realme 8 Pro",
+      "description": "6.4-inch Super AMOLED, Snapdragon 720G, 108MP camera, 128GB storage, Infinite Blue color.",
+      "price": 269,
+      "image": "https://phonesstorekenya.com/wp-content/uploads/2021/06/Realme-8-a.jpg",
+      "status": "available"
+    },
+    {
+      "id": "29",
+      "name": "Vivo X60 Pro",
+      "description": "6.56-inch AMOLED, Snapdragon 870, 48MP camera, 256GB storage, Midnight Black color.",
+      "price": 799,
+      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2021/09/Vivo-X60-Pro.jpg",
+      "status": "available"
+    },
+    {
+      "id": "30",
+      "name": "Asus Zenfone 8",
+      "description": "5.9-inch AMOLED, Snapdragon 888, 64MP camera, 128GB storage, Horizon Silver color.",
+      "price": 799,
+      "image": "https://www.notebookcheck.net/fileadmin/_processed_/4/4/csm_Asus_Zenfone_8_1_f4b476962c.png",
+      "status": "available"
+    },
+    {
+      "id": "31",
+      "name": "iPhone 12 Pro",
+      "description": "6.1-inch OLED display, A14 Bionic chip, 12MP triple camera system, 128GB storage.",
+      "price": 999,
+      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2020/08/Apple-iPhone-12-Pro-Max.jpg",
+      "status": "available"
+    },
+    {
+      "id": "32",
+      "name": "Samsung Galaxy Z Flip 3",
+      "description": "6.7-inch Dynamic AMOLED, Snapdragon 888, 12MP camera, 128GB storage, Phantom Black color.",
+      "price": 999,
+      "image": "https://www.pricepoint.co.ke/wp-content/uploads/2021/07/Samsung-Galaxy-Z-Flip-3-j.jpg",
+      "status": "available"
+    },
+    {
+      "id": "33",
+      "name": "Google Pixel 4a",
+      "description": "5.81-inch OLED, Snapdragon 730G, 12MP camera, 128GB storage, Just Black color.",
+      "price": 349,
+      "image": "https://mobileprokenya.odoo.com/web/image/product.template/1878/image_1024?unique=a0bee9b",
+      "status": "available"
+    },
+    {
+      "id": "34",
+      "name": "Huawei P40 Pro",
+      "description": "6.58-inch OLED, Kirin 990, 50MP quad-camera, 256GB storage, Silver Frost color.",
+      "price": 999,
+      "image": "https://avechi.co.ke/mogefov/2021/06/Huawei-P40-Pro-d-1.jpg",
+      "status": "available"
+    },
+    {
+      "id": "35",
+      "name": "Samsung Galaxy A72",
+      "description": "6.7-inch Super AMOLED, Snapdragon 720G, 64MP camera, 128GB storage, Awesome Blue color.",
+      "price": 449,
+      "image": "https://images-na.ssl-images-amazon.com/images/I/413iElIiSbS._UL500_.jpg",
+      "status": "available"
+    },
+    {
+      "id": "36",
+      "name": "Realme Narzo 30 Pro",
+      "description": "6.5-inch IPS LCD, MediaTek Dimensity 800U, 48MP camera, 64GB storage, Black color.",
+      "price": 199,
+      "image": "https://www.phonestablets.co.ke/wp-content/uploads/2021/04/Realme-Narzo-30-Pro-2-Display-Back.jpg",
+      "status": "available"
+    },
+    {
+      "id": "37",
+      "name": "Xiaomi Mi 10T Pro",
+      "description": "6.67-inch IPS LCD, Snapdragon 865, 108MP camera, 128GB storage, Lunar Silver color.",
+      "price": 549,
+      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2021/02/Xiaomi-Mi-10T-Pro-5G.jpg",
+      "status": "available"
+    },
+    {
+      "id": "38",
+      "name": "OnePlus Nord 2",
+      "description": "6.43-inch AMOLED, MediaTek Dimensity 1200, 50MP camera, 128GB storage, Gray Sierra color.",
+      "price": 399,
+      "image": "https://www.cityhub.co.ke/wp-content/uploads/2024/08/OnePlus-Nord-2-5G-b-400x400-1-e1724762893253.jpg",
+      "status": "available"
+    },
+    {
+      "id": "39",
+      "name": "Apple iPhone 8",
+      "description": "4.7-inch Retina display, A11 Bionic chip, 12MP camera, 64GB storage, Space Gray color.",
+      "price": 299,
+      "image": "https://phonesstorekenya.com/wp-content/uploads/2018/09/Apple-iPhone-8-Black.jpg",
+      "status": "available"
+    },
+    {
+      "id": "40",
+      "name": "Nokia 7.2",
+      "description": "6.3-inch IPS LCD, Snapdragon 660, 48MP triple camera, 128GB storage, Charcoal color.",
+      "price": 299,
+      "image": "https://nairobiultrabooks.odoo.com/web/image/product.template/2768/image_1024?unique=e3d1549",
+      "status": "available"
+    },
+    {
+      "id": "41",
+      "name": "Oppo Reno 4 Pro",
+      "description": "6.5-inch AMOLED, Snapdragon 720G, 48MP camera, 128GB storage, Starry Night color.",
+      "price": 499,
+      "image": "https://api.priceinkenya.com/media/122681/conversions/oppo-reno-4-pro-4g-8gb128gb-qbYp5dCqDC-original.webp",
+      "status": "available"
+    },
+    {
+      "id": "42",
+      "name": "Vivo V20 Pro",
+      "description": "6.44-inch AMOLED, Snapdragon 765G, 44MP dual camera, 128GB storage, Sunset Melody color.",
+      "price": 459,
+      "image": "https://5.imimg.com/data5/SELLER/Default/2021/4/KK/OY/FZ/51998494/vivo-v20.jpeg",
+      "status": "available"
+    },
+    {
+      "id": "43",
+      "name": "Xiaomi Mi Mix 4",
+      "description": "6.67-inch AMOLED, Snapdragon 888+, 108MP camera, 256GB storage, Ceramic Black color.",
+      "price": 1099,
+      "image": "https://xiaomitime.com/wp-content/themes/xiaomiuiwp/assets/phones/devicephotos/odin_3.webp",
+      "status": "available"
+    },
+    {
+      "id": "44",
+      "name": "Apple iPhone XS",
+      "description": "5.8-inch Super Retina OLED display, A12 Bionic chip, 12MP camera, 64GB storage.",
+      "price": 649,
+      "image": "https://smartworldkenya.com/public/uploads/products/meta/WllAtE013TbVIxEcS0yzRBamAn5TtnyI5OHYXySd.jpeg",
+      "status": "available"
+    },
+    {
+      "id": "45",
+      "name": "Samsung Galaxy M51",
+      "description": "6.7-inch Super AMOLED, Snapdragon 730G, 64MP camera, 128GB storage, Black color.",
+      "price": 379,
+      "image": "https://www.phonestablets.co.ke/wp-content/uploads/2021/08/Samsung-Galaxy-M51-2.jpg",
+      "status": "available"
+    },
+    {
+      "id": "46",
+      "name": "Realme X50 Pro",
+      "description": "6.44-inch Super AMOLED, Snapdragon 865, 64MP camera, 128GB storage, Green color.",
+      "price": 549,
+      "image": "https://cellularkenya.co.ke/wp-content/uploads/2022/05/Realme-X50-Pro-5G-Moss-Green.jpg",
+      "status": "available"
+    },
+    {
+      "id": "47",
+      "name": "Google Pixel 4 XL",
+      "description": "6.3-inch OLED, Snapdragon 855, 16MP camera, 64GB storage, Just Black color.",
+      "price": 749,
+      "image": "https://www.priceinkenya.com/_ipx/b_%23ffffff,f_png,q_75,fit_contain,s_300x300/https://api.priceinkenya.com/media/121892/conversions/google-pixel-4-xl-6gb128gb-LVuHJ382qe-original.webp",
+      "status": "available"
+    },
+    {
+      "id": "48",
+      "name": "Asus Zenfone 7 Pro",
+      "description": "6.67-inch AMOLED, Snapdragon 865+, 64MP camera, 256GB storage, Black color.",
+      "price": 849,
+      "image": "https://cdn.dxomark.com/wp-content/uploads/medias/post-54152/ZenFone-7_pro.jpg",
+      "status": "available"
+    },
+    {
+      "id": "49",
+      "name": "Samsung Galaxy A51",
+      "description": "6.5-inch Super AMOLED, Exynos 9611, 48MP quad-camera, 64GB storage, Prism Crush Black color.",
+      "price": 299,
+      "image": "https://m.media-amazon.com/images/I/61pwpYcjYlL._AC_SL1000_.jpg",
+      "status": "available"
+    },
+    {
+      "id": "50",
+      "name": "Xiaomi Mi 9T",
+      "description": "6.39-inch AMOLED, Snapdragon 730, 48MP camera, 128GB storage, Carbon Black color.",
+      "price": 329,
+      "image": "https://saruk.co.ke/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fdm0idgzwi%2Fimage%2Fupload%2Fv1707220090%2Fs6iubmy9jgwsmfpebzt6.jpg&w=640&q=75",
+      "status": "available"
+    },
+    {
+      "id": "b242",
+      "name": "redmi",
+      "description": "new",
+      "price": "140000",
+      "status": "available",
+      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2024/09/Xiaomi-Redmi-14C-b.jpg"
+    },
+    {
+      "id": "7d6c",
+      "name": "Redmi 13",
+      "description": "Key Features:\nDisplay: IPS LCD, 6.43-inches\nMain Camera: Triple, 108MP + 8MP + 2MP\nSelfie Camera: Single, 16 MP\nChipset: Mediatek Helio G96 (12 nm)\nSoftware: Android 13, MIUI 14\nNetwork: 4G, 3G, 2G\nStorage: 256GB 8GB RAM\nBattery: Li-Po 5000 mAh, non-removable\nCharging: 33W wired",
+      "price": "22000",
+      "status": "available",
+      "image": "https://www.phonestablets.co.ke/wp-content/uploads/2023/10/Redmi-Note-13.jpg.webp"
+    }
+  ]
+}
