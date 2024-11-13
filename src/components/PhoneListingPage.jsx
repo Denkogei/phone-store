@@ -35,7 +35,7 @@ function HandleDisplayPhone({ data, loading, error }) {
 
     return (
         <section>
-            <h2 style={{ color: "white", textAlign: "center" }}>AVAILABLE PHONES</h2>
+            <h2 style={{ color: "black", textAlign: "center",paddingTop:"30px" }}>AVAILABLE PHONES</h2>
             <div className="phone-list">
                 {data.length === 0 ? (
                     <p>No phones available at the moment.</p>  // Handling empty data array
