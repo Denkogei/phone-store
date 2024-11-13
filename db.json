@@ -415,6 +415,70 @@
       "price": "22000",
       "status": "available",
       "image": "https://www.phonestablets.co.ke/wp-content/uploads/2023/10/Redmi-Note-13.jpg.webp"
+    },
+    {
+      "id": "c583",
+      "name": "Tecno Spark 10",
+      "description": "Display: IPS LCD, 6.6-inches\nMain Camera: Quad, 48 MP + 2 MP + 2 MP + 2 MP\nSelfie Camera: Single, 8 MP\nChipset: MediaTek Helio G90\nSoftware: Android 13, HIOS 12.6\nNetwork: 4G, 3G, 2G\nStorage: 128GB 8GB RAM\nBattery: Li-Po 6000 mAh, non-removable\nCharging: 18W wired",
+      "price": "19700",
+      "status": "available",
+      "image": "https://infogram.co.ke/wp-content/uploads/2023/11/Tecno-Spark-10.png-1200x1200.webp"
+    },
+    {
+      "id": "334e",
+      "name": "Huawei Mate 70 Pro",
+      "description": "RAM: 12GB/16GB\nStorage: 256GB, 512GB\nDisplay: 6.82 inches, Curved OLED, 120Hz\nChipset: Kirin 9100\nOS: HarmonyOS\nMain camera: 60MP + 12MP + 48MP\nFront camera: 48MP, 3D ToF sensor\nBattery: 5000mAh, 88W fast charging\nConnectivity: 5G, Wi-Fi 6, Bluetooth 5.2, NFC, USB Type-C",
+      "price": "140000",
+      "status": "available",
+      "image": "https://www.phonestablets.co.ke/wp-content/uploads/2024/08/mate_60_pro_black_5.webp"
+    },
+    {
+      "id": "fbea",
+      "name": " Huawei P30 Pro ",
+      "description": "Huawei P30 Pro with 128GB internal storage and 8GB RAM\nFeatures a 40MP camera and LTE connectivity\nFactory unlocked GSM smartphone, suitable for international use\nSupports 3G HSDPA and 4G LTE bands 1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 17, 18, 19, 20, 26, 28, 32, 34, 38, 39, and 40\nComes in the color variant 'Aurora'\n",
+      "price": "67000",
+      "status": "available",
+      "image": "https://m.media-amazon.com/images/I/61Z79js8OhL._AC_SL1000_.jpg"
+    },
+    {
+      "id": "02bf",
+      "name": "Huawei Nova 12SE Green",
+      "description": "6.67 inch OLED HUAWEI FullView Display\nResolution: 2400 x 1080 pixels\nTriple Rear Camera: 108MP+8MP+2MP\nFront Camera: 32MP\nQualcomm Snapdragon 680 Octa Core 2.4 GHz\nEMUI 14\n8GB RAM + 256GB Internal Storage\n4500mAh Battery\n2 Years Warranty",
+      "price": "106350",
+      "status": "available",
+      "image": "https://www.courtsmammouth.mu/104349-large_default/huawei-nova-12se-green.jpg"
+    },
+    {
+      "id": "7e6e",
+      "name": "Huawei P40 Lite",
+      "description": "Display\t6.4 inch\nCamera\t48MP + 8MP + 2MP + 2MP\nRAM\t6 GB\nStorage\t128 GB\nChipset\tHiSilicon Kirin 810\nO.S\tAndroid 10; EMUI 10\nBattery\t4,200 mAh",
+      "price": "25000",
+      "status": "available",
+      "image": "https://phonesstorekenya.com/wp-content/uploads/2019/12/Huawei-P40-lite-Light-Pink.jpg"
+    },
+    {
+      "id": "0238",
+      "name": "Xiaomi Redmi 14C",
+      "description": "RAM: 4GB, 6GB, 8GB\nInternal Memory: 128GB, 256GB\nOS: Android 14, HyperOS\nChipset: Mediatek Helio G81 Ultra\nMain Camera: 50MP + 2MP\nSelfie Camera: 13MP\nConnectivity: 4G, Bluetooth 5.4, Type-C\nBattery: 5160mAh, 33W",
+      "price": "13700",
+      "status": "available",
+      "image": "https://www.phoneplacekenya.com/wp-content/uploads/2024/09/Xiaomi-Redmi-14C-c.jpg"
+    },
+    {
+      "id": "491b",
+      "name": "Xiaomi Redmi A3 ",
+      "description": "Operating system\tAndroid\nCPU model\tSnapdragon\nMemory storage capacity\t4 GB\nScreen size\t6.74 Inches\nResolution\t1080 x 2400\nModel name\tRedmi A3\nWireless carrier\tUnlocked for All Carriers\nCellular technology\t5G\nConnectivity technology\tBluetooth, Wi-Fi, USB",
+      "price": "30000",
+      "status": "available",
+      "image": "https://m.media-amazon.com/images/I/51crvhw78wL._AC_SX679_.jpg"
+    },
+    {
+      "id": "8be5",
+      "name": "Tecno Spark 10",
+      "description": "Dual Sim, 3G, 4G, VoLTE, Wi-Fi\nHelio G88, Octa Core, 2?GHz Processor\n4GB RAM, 64GB inbuilt\n5000mAh Battery with 18W Fast Charging\n6.73 inches Display with Water Drop Notch\n50MP Dual Rear & 8MP Front Camera\n",
+      "price": "18999",
+      "status": "available",
+      "image": "https://phoneshopkenya.co.ke/wp-content/uploads/2024/05/Tecno-Spark-10-1.jpg"
     }
   ]
 }

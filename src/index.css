@@ -43,7 +43,40 @@ li a {
   padding: 5px;
   text-decoration: none;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
+  border-radius: 1px solid black;
+}
+/* Search Container */
+.search-container {
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-end; 
+  gap: 10px; 
+  flex-grow: 1; 
+}
+
+/* Search Input */
+.search-input {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px; 
+  font-family: 'Arial', sans-serif;
+}
+
+/* Search Button */
+.search-button {
+  padding: 8px 16px;
+  width: 100px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Arial', sans-serif;
 }
 
 .phone-list {
