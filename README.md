@@ -35,7 +35,7 @@ This is a phone store application built with React JS. The app showcases core Re
 
 ### View Live Site
 
-Visit the deployed application at: [React Phone Store](https://blog-app-sdf-ft11.netlify.app/)
+Visit the deployed application at: [React Phone Store](https://phonestorebydennis.netlify.app/)
 
 The live site allows you to:
 
@@ -102,8 +102,8 @@ If you want to run the project locally, you'll need:
 
 ### Backend API
 
-- Repository: [Phone Store API Repository](https://github.com/dennis-kiboi/blog-app-sdf-ft11-json-server)
-- Deployed API: [Live API URL](https://blog-app-sdf-ft11-json-server.onrender.com)
+- Repository: [Phone Store API Repository](https://github.com/Denkogei/phone-store-backend)
+- Deployed API: [Live API URL](https://phone-store-backend-626o.onrender.com)
 
 ## Support and Contact Details
 
