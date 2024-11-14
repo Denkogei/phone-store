@@ -1,70 +1,124 @@
-# Getting Started with Create React App
+# React Phone Store App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### This is a simple and user-friendly phone store app built with React JS. It showcases a collection of smartphones, allowing users to search, filter, and view detailed information about each device. 
 
-## Available Scripts
+#### By **Dennis Kemboi**
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+This is a phone store application built with React JS. The app showcases core React concepts, including components, state management, and React Router for navigation. Users can browse a list of available phones on the homepage, view detailed information on individual phones, access the About page, and submit new phones via the Add Phone form."
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Screenshot
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![React Phone Store App Screenshot](./public/assets/layout.png)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Home page displaying a list of phones
+- Individual phone page
+- About page
+- Search feature
+- Simple and clean UI design
+- A form to upload phone with its details
+- Contact seller on whatsapp
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## How to Use
 
-### `npm run eject`
+### Requirements
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- A computer, tablet, or phone
+- Access to the internet
+- A modern web browser
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### View Live Site
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Visit the deployed application at: [React Phone Store](https://blog-app-sdf-ft11.netlify.app/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The live site allows you to:
 
-## Learn More
+- Browse through the list of phones on the home page
+- Click on any phone to see features and contact seller
+- Navigate to the About page to learn more about the website
+- Click on whatsapp link to contact seller
+- you can add new for using add phone page
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Local Development
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+If you want to run the project locally, you'll need:
 
-### Code Splitting
+- Node.js installed on your computer
+- Basic understanding of React JS
+- Code editor (VS Code recommended)
+- Terminal/Command Line
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Installation Process
 
-### Analyzing the Bundle Size
+1. Clone this repository using:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```bash
+   git clone git@github.com:Denkogei/phone-store.git
+   ```
 
-### Making a Progressive Web App
+   or by downloading a ZIP file of the code.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. Navigate to the project directory:
 
-### Advanced Configuration
+   ```bash
+   cd phone-store
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. Install the required dependencies:
 
-### Deployment
+   ```bash
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+4. Run json server:
 
-### `npm run build` fails to minify
+   ```bash
+   json-server --watch db.json
+   ```
+ 
+5. Run the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```bash
+   npm start
+   ```
+
+5. Open your browser and visit `http://localhost:3001`
+
+## Technologies Used
+
+- React JS
+- create-react-app
+- CSS3
+- JavaScript (ES6)
+- Font-awesome
+
+## Related Repositories
+
+### Backend API
+
+- Repository: [Phone Store API Repository](https://github.com/dennis-kiboi/blog-app-sdf-ft11-json-server)
+- Deployed API: [Live API URL](https://blog-app-sdf-ft11-json-server.onrender.com)
+
+## Support and Contact Details
+
+If you have any questions, suggestions, or need assistance, please contact:
+
+- Email: <denkogei11@gmail.com>
+
+## License
+
+MIT License
+
+Copyright &copy; 2024 Dennis Kemboi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
