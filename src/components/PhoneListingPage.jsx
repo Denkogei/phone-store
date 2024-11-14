@@ -1,70 +1,75 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
+const PhoneListingPage = ({ searchTerm }) => {
+  const [phones, setPhones] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const navigate = useNavigate();  // Hook to navigate programmatically
 
+  useEffect(() => {
+    const fetchPhones = async () => {
+      try {
+        const response = await axios.get('http://localhost:3000/phones');
+        setPhones(response.data);  // Set phones data to state
+      } catch (error) {
+        setError('Failed to fetch phones');
+        console.error('Error fetching phones:', error);
+      } finally {
+        setLoading(false);  // Set loading to false when fetch is complete
+      }
+    };
 
+    fetchPhones(); 
+  }, []);  
 
+  // Filter phones based on the search term
+  const filteredPhones = phones.filter((phone) =>
+    phone.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
+  // If loading, show loading message
+  if (loading) {
+    return <div>Loading phones...</div>;
+  }
 
-const PhoneListingPage = () => {
-    const [data, setData] = useState();
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
-    
+  // If error, show error message
+  if (error) {
+    return <div>{error}</div>;
+  }
 
-  
+  // Handle card click to navigate to phone details
+  const handleCardClick = (id) => {
+    navigate(`/phone/${id}`);  // Navigate to the phone detail page
+  };
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await axios.get("http://localhost:3000/phones");
-                setData(response.data);
-            } catch (error) {
-                setError('Failed to fetch data. Please try again later.');
-                console.error('Error fetching data:', error);  // Logging error for debugging
-            } finally {
-                setLoading(false);
-            }
-        };
-        fetchData();
-    }, []);
-    
-    return <HandleDisplayPhone data={data} loading={loading} error={error} />;
-};
-
-function HandleDisplayPhone({ data, loading, error }) {
-    if (loading) {
-        return <p className="loading-text">Loading......</p>;  // Styling for loading text
-    }
-
-    if (error) {
-        return <p className="error-text">{error}</p>;  // Styling for error text
-    }
-
-    return (
-        <section>
-            <h2 style={{ color: "black", textAlign: "center",paddingTop:"30px" }}>AVAILABLE PHONES</h2>
-            <div className="phone-list">
-                {data.length === 0 ? (
-                    <p>No phones available at the moment.</p>  // Handling empty data array
-                ) : (
-                    data.map((phone) => (
-                        <div key={phone.id} className="phone-card">
-                            <img src={phone.image} alt={phone.name} className="phone-image" />
-                            <div className="phone-info">
-                                <h3 className="phone-name">{phone.name}</h3>
-                                <p className="phone-description">{phone.description}</p>
-                                <p className="phone-price">KES {phone.price}</p>
-                                <p className={`phone-status ${phone.status === 'available' ? 'available' : 'out-of-stock'}`}>
-                                    {phone.status.charAt(0).toUpperCase() + phone.status.slice(1)}
-                                </p>
-                            </div>
-                        </div>
-                    ))
-                )}
+  return (
+    <div>
+      <h2 style={{padding:"30px"}}>Available Phones</h2>
+      {filteredPhones.length === 0 ? (
+        <p>No phones found matching your search.</p>
+      ) : (
+        <div className="phone-list">
+          {filteredPhones.map((phone) => (
+            <div
+              key={phone.id}
+              className="phone-card"
+              onClick={() => handleCardClick(phone.id)}  // Add onClick handler for navigation
+            >
+              <img src={phone.image} alt={phone.name} className="phone-image" />
+              <h3>{phone.name}</h3>
+              <p>Price: KES {phone.price}</p>
+              {/* Displaying the status */}
+              <p className={`phone-status ${phone.status === 'available' ? 'available' : 'out-of-stock'}`}>
+                {phone.status.charAt(0).toUpperCase() + phone.status.slice(1)}
+              </p>
             </div>
-        </section>
-    );
-}
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
 
 export default PhoneListingPage;
