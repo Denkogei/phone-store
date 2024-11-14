@@ -28,7 +28,7 @@ const AddPhone = () => {
 
     try {
       // Send the formData, including phoneNumber
-      await axios.post('http://localhost:3000/phones', formData);
+      await axios.post('https://phone-store-backend-626o.onrender.com/phones', formData);
       setMessage('Phone added successfully!');
       setMessageType('success');
       setFormData({

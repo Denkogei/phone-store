@@ -11,7 +11,7 @@ const PhoneListingPage = ({ searchTerm }) => {
   useEffect(() => {
     const fetchPhones = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/phones');
+        const response = await axios.get('https://phone-store-backend-626o.onrender.com/phones');
         setPhones(response.data);  // Set phones data to state
       } catch (error) {
         setError('Failed to fetch phones');

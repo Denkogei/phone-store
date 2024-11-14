@@ -12,7 +12,7 @@ const PhoneDetail = () => {
   useEffect(() => {
     const fetchPhone = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/phones/${id}`);
+        const response = await axios.get(`https://phone-store-backend-626o.onrender.com/phones/${id}`);
         setPhone(response.data);
       } catch (error) {
         setError('Failed to fetch phone details');
