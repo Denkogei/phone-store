@@ -38,7 +38,7 @@ const PhoneDetail = () => {
   }
 
   // Handle phone number properly
-  const phoneNumber = phone.phone_number || '+254724554147'; // Use the phone number from DB, or fallback to your number if missing
+  const phoneNumber = phone.phone_number // Use the phone number from DB, or fallback to your number if missing
   const whatsappLink = `https://wa.me/${phoneNumber}?text=Hi%20I'm%20interested%20in%20the%20${phone.name}`;
 
   return (
