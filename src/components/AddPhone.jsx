@@ -220,15 +220,6 @@ const styles = {
     backgroundColor: '#a5d6a7',
     cursor: 'not-allowed',
   },
-  message: {
-    padding: '10px',
-    borderRadius: '5px',
-    textAlign: 'center',
-    fontWeight: 'bold',
-    marginTop: '20px',
-    margin: '0 auto',
-    width: '100%',
-  },
   errorMessage: {
     color: 'red',
     fontSize: '14px',
