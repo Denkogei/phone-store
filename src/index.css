@@ -83,51 +83,7 @@ body {
   background-color: greenyellow;
 }
 
-/* Media Queries for responsiveness */
-@media (max-width: 768px) {
-  .navbar-left ul {
-    display: none; /* Hide navbar links on mobile */
-    flex-direction: column;
-    width: 100%;
-    background-color: #333;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    padding: 10px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
 
-  .navbar-left ul.open {
-    display: flex; /* Show navbar links when hamburger menu is open */
-  }
-
-  .navbar-left li {
-    margin: 10px 0;
-    text-align: center;
-  }
-
-  .navbar-left li a {
-    font-size: 18px;
-  }
-
-  .navbar-right {
-    display: none; 
-  }
-
-  .hamburger {
-    display: flex; 
-  }
-}
-
-@media (max-width: 480px) {
-  .search-input {
-    width: 150px;
-  }
-
-  .search-button {
-    padding: 6px 12px;
-  }
-}
 
 .phone-list {
   display: flex;
