@@ -14,10 +14,29 @@ const AddPhone = () => {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
   const [messageType, setMessageType] = useState(''); // success or error
+  const [phoneError, setPhoneError] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  // Function to format the phone number and validate it
+  const validateAndFormatPhoneNumber = (phone) => {
+    // Remove any non-numeric characters (like spaces, dashes)
+    const cleanedPhone = phone.replace(/\D/g, '');
+
+    // Check if phone number starts with '0' and prepend the country code
+    if (cleanedPhone.startsWith('0')) {
+      return '+254' + cleanedPhone.substring(1); // For Kenya, replace 0 with +254
+    }
+
+    // If it doesn't start with '0', check if it's in international format
+    if (/^\+?\d{9,15}$/.test(cleanedPhone)) {
+      return cleanedPhone; // Valid phone number, return it as is
+    }
+
+    return null; // Return null if the phone number is invalid
   };
 
   const handleSubmit = async (e) => {
@@ -25,10 +44,20 @@ const AddPhone = () => {
     setLoading(true);
     setMessage('');
     setMessageType('');
+    setPhoneError(''); // Reset phone error
 
+    // Validate and format the phone number
+    const formattedPhone = validateAndFormatPhoneNumber(formData.phoneNumber);
+    if (!formattedPhone) {
+      setPhoneError('Invalid phone number. Please enter a valid phone number.');
+      setLoading(false);
+      return;
+    }
+
+    // Proceed with the form submission
     try {
-      // Send the formData, including phoneNumber
-      await axios.post('https://phone-store-backend-626o.onrender.com/phones', formData);
+      const data = { ...formData, phoneNumber: formattedPhone }; // Include formatted phone number in the submission
+      await axios.post('https://phone-store-backend-626o.onrender.com/phones', data);
       setMessage('Phone added successfully!');
       setMessageType('success');
       setFormData({
@@ -102,6 +131,10 @@ const AddPhone = () => {
           required
           style={styles.input}
         />
+        {/* Show phone number error message */}
+        {phoneError && (
+          <p style={styles.errorMessage}>{phoneError}</p>
+        )}
         <button type="submit" disabled={loading} style={styles.button}>
           {loading ? 'Adding...' : 'Add Phone'}
         </button>
@@ -186,6 +219,20 @@ const styles = {
   buttonDisabled: {
     backgroundColor: '#a5d6a7',
     cursor: 'not-allowed',
+  },
+  message: {
+    padding: '10px',
+    borderRadius: '5px',
+    textAlign: 'center',
+    fontWeight: 'bold',
+    marginTop: '20px',
+    margin: '0 auto',
+    width: '100%',
+  },
+  errorMessage: {
+    color: 'red',
+    fontSize: '14px',
+    marginTop: '5px',
   },
   message: {
     padding: '10px',
