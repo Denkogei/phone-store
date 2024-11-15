@@ -21,14 +21,13 @@ const AddPhone = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  // Function to format the phone number and validate it
   const validateAndFormatPhoneNumber = (phone) => {
     // Remove any non-numeric characters (like spaces, dashes)
     const cleanedPhone = phone.replace(/\D/g, '');
 
     // Check if phone number starts with '0' and prepend the country code
     if (cleanedPhone.startsWith('0')) {
-      return '+254' + cleanedPhone.substring(1); // For Kenya, replace 0 with +254
+      return '+254' + cleanedPhone.substring(1); 
     }
 
     // If it doesn't start with '0', check if it's in international format
@@ -147,7 +146,7 @@ const AddPhone = () => {
             ...styles.message,
             backgroundColor: messageType === 'success' ? '#8dee84' : '#f8d7da',
             border: messageType === 'success' ? '1px solid green' : '1px solid red',
-            color: messageType === 'success' ? 'green' : 'red', marginTop: "12vh"
+            color: messageType === 'success' ? 'green' : 'red', marginTop: "15vh"
           }}
         >
           {message}
@@ -163,6 +162,7 @@ const styles = {
     maxWidth: '600px',
     margin: '0 auto',
     padding: '20px',
+    paddingTop: '12vh', // Add padding-top to ensure content is below navbar
     backgroundColor: '#f9f9f9',
     borderRadius: '8px',
     boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',

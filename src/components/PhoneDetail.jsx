@@ -71,6 +71,7 @@ const styles = {
     maxWidth: '600px',
     margin: '0 auto',
     padding: '20px',
+    paddingTop: '12.5vh', // Adding padding-top to ensure content is below navbar
     backgroundColor: '#f9f9f9',
     borderRadius: '8px',
     boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
