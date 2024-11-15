@@ -3,7 +3,7 @@ import React from 'react';
 const About = () => {
   return (
     <>
-    <h2 style={{color:"black",textAlign:"center",paddingTop:"30px"}}>About Us</h2>
+    <h2 style={{color:"black",textAlign:"center",paddingTop:"15vh"}}>About Us</h2>
     <div className='about' style={{color:"black"}}>
       <img src="/assets/about.png" alt="Phone Store Logo" style={{ width: "500px", height: "auto" }} />
       <p style={{color:"black"}}> 
