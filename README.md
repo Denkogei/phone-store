@@ -1,6 +1,6 @@
 # React Phone Store App
 
-#### This is a simple and user-friendly phone store app built with React JS. It showcases a collection of smartphones, allowing users to search, filter, and view detailed information about each device. 
+#### This is a simple and user-friendly phone store app built with React JS and consumes Json data. It showcases a collection of smartphones, allowing users to search, filter, and view detailed information about each device. 
 
 #### By **Dennis Kemboi**
 
