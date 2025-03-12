@@ -1,3 +1,4 @@
+/* Global Styles (Apply to all screens) */
 * {
   margin: 0;
   padding: 0;
@@ -6,11 +7,10 @@
 }
 
 body {
-  background-color: whitesmoke; 
+  background-color: whitesmoke;
   margin: 0;
+  padding-top: 80px; /* Prevents content from being hidden under navbar */
 }
-
-
 
 .navbar {
   display: flex;
@@ -18,20 +18,18 @@ body {
   align-items: center;
   padding: 1rem 2rem;
   background-color: white;
-  color: #fff;
+  color: #333;
   top: 0;
   position: fixed;
   width: 100%;
-  z-index: 1000;
-  height: 12vh;
+  z-index: 1000; /* Ensure navbar is above other content */
+  height: 10vh; /* Adjusted height */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for better visibility */
 }
-
 
 .navbar-left ul {
   display: flex;
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .navbar-left ul li {
@@ -39,13 +37,11 @@ body {
 }
 
 .navbar-left ul li a {
-  color: black;
+  color: #333; /* Darker text for better readability */
   font-size: 19px;
   text-decoration: none;
   font-weight: bold;
 }
-
-
 
 .navbar-right {
   margin-left: auto;
@@ -56,23 +52,22 @@ body {
 .search-container {
   display: flex;
   align-items: center;
-  gap: 2.0rem;
+  gap: 2rem;
 }
 
 .search-input {
   padding: 0.5rem;
-  border: none;
-  border-radius: 4px 0 0 4px; 
+  border: 2px solid #333;
+  border-radius: 4px 0 0 4px;
   outline: none;
   width: 300px;
-  border: 2px solid #333;
 }
 
 .search-button {
   padding: 0.5rem 1rem;
-  background-color: #4caf50;;
+  background-color: #4caf50;
   border: none;
-  border-radius: 0 4px 4px 0; 
+  border-radius: 0 4px 4px 0;
   color: #fff;
   cursor: pointer;
   font-weight: bold;
@@ -82,8 +77,6 @@ body {
 .search-button:hover {
   background-color: greenyellow;
 }
-
-
 
 .phone-list {
   display: flex;
@@ -127,10 +120,9 @@ body {
   font-size: 16px;
   color: #555;
 }
-.phone-status{
-  width: 300px;
-}
+
 .phone-status {
+  width: 300px;
   font-size: 20px;
   font-weight: bold;
   color: green;
@@ -138,11 +130,13 @@ body {
   margin-top: 10px; /* Space between the price and status */
   padding-left: 90px;
 }
+
 .out-of-stock {
-  color: red;    /* Red for out of stock */
+  color: red; /* Red for out of stock */
 }
+
 .view-details-btn {
-  background-color: green;  /* Blue color for the button */
+  background-color: green; /* Blue color for the button */
   color: white;
   font-size: 16px;
   padding: 10px 20px;
@@ -153,8 +147,6 @@ body {
   transition: background-color 0.3s ease;
   width: 100%;
 }
-
-
 
 .view-details-btn:focus {
   outline: none; /* Remove focus outline */
@@ -169,25 +161,22 @@ p {
 
 p.loading {
   font-size: 1.6rem;
-  color: #007bff; 
+  color: #007bff;
 }
 
 p.error {
   font-size: 1.6rem;
-  color: #dc3545; 
+  color: #dc3545;
 }
-
-
 
 .form-container {
   width: 100%;
-  max-width: 450px; 
-  padding: 20px; 
-  background-color: #fff; 
+  max-width: 450px;
+  padding: 20px;
+  background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box; 
-  
+  box-sizing: border-box;
 }
 
 h2 {
@@ -200,7 +189,7 @@ h2 {
 form {
   display: flex;
   flex-direction: column;
-  gap: 15px; 
+  gap: 15px;
   width: 650px;
   position: absolute;
   top: 50%;
@@ -237,13 +226,6 @@ button:disabled {
   cursor: not-allowed;
 }
 
-
-p {
-  text-align: center;
-  font-size: 16px;
-  margin-top: 20px;
-}
-
 .success {
   color: #4caf50;
 }
@@ -252,35 +234,28 @@ p {
   color: #e74c3c;
 }
 
-/* About.css */
 .about {
   color: black;
   padding: 20px;
   display: flex;
-  align-items: center; 
-  justify-content: space-between; 
-  gap: 20px;  
-  margin-top: 20px; 
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
 }
 
-
-/* Image styling */
 .about-image {
   width: 500px;
   height: auto;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
-/* Text styling */
 .about p {
   color: black;
   max-width: 1600px;
   font-size: 24px;
 }
 
-
-
-/* The container for the entire phone detail */
 .phone-detail-container {
   padding: 20px;
   display: flex;
@@ -288,7 +263,6 @@ p {
   background-color: #f9f9f9; /* Light background color for the page */
 }
 
-/* Card layout */
 .phone-detail-card {
   display: flex;
   background-color: #fff;
@@ -300,7 +274,6 @@ p {
   padding: 20px;
 }
 
-/* Left side (image) */
 .phone-detail-left {
   flex: 1;
   padding-right: 20px; /* Space between image and text */
@@ -314,7 +287,6 @@ p {
   object-fit: cover;
 }
 
-/* Right side (text) */
 .phone-detail-right {
   flex: 2;
   padding-left: 20px; /* Space between image and details */
@@ -323,7 +295,6 @@ p {
   justify-content: space-between;
 }
 
-/* Styling for headings and text */
 .phone-detail-right h2 {
   font-size: 2em;
   color: #333;
@@ -339,7 +310,7 @@ p {
 .phone-detail-right strong {
   color: #333;
 }
-/* PhoneDetail.css */
+
 .phone-detail {
   text-align: center;
   padding: 20px;
@@ -369,18 +340,185 @@ p {
 .whatsapp-button:hover {
   background-color: #128C7E;
 }
+
 .error-page {
-  position: relative; 
-  height: 100vh; 
-  width: 90%; 
+  position: relative;
+  height: 100vh;
+  width: 90%;
 }
 
 .error-background-image {
-  position: absolute; 
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%; 
-  height: 100%; 
-  object-fit: cover; 
-  z-index: -1; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh; /* Full height */
+  background-color: #f4f4f4;
+  position: fixed; /* Sticks to the side */
+  left: 0;
+  top: 0;
+  padding: 20px;
+  display: block; /* Ensure it's not hidden */
+  z-index: 999; /* Ensure sidebar is below navbar */
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+  display: none; /* Hide by default */
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333; /* Icon color */
+}
+
+/* Navbar Links Styling */
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Hide Regular Nav Links */
+  .navbar-left ul {
+    display: none;
+  }
+
+  /* Show Hamburger Icon */
+  .hamburger {
+    display: block; /* Show on mobile */
+  }
+
+  /* Show Nav Links When Menu is Open */
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 10vh; /* Position below the navbar */
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure navbar links are above other content */
+  }
+
+  /* Modernize Navbar Links for Mobile */
+  .nav-links.active li {
+    margin: 0.5rem 0; /* Add vertical spacing between links */
+  }
+
+  .nav-links.active li a {
+    font-size: 16px; /* Smaller font size for mobile */
+    font-weight: normal; /* Remove bold font */
+    color: #333; /* Darker text for better readability */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links.active li a:hover {
+    color: #4caf50; /* Green color on hover */
+  }
+
+  /* Adjust Navbar Right Section */
+  .navbar-right {
+    display: none; /* Hide search bar in navbar on mobile */
+  }
+
+  /* Move Search Bar to Body */
+  .body-search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px; /* Space below navbar */
+    position: relative; /* Ensure search bar is below navbar links */
+    z-index: 999; /* Lower z-index than navbar links */
+  }
+
+  .body-search-input {
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+
+  .body-search-input:focus {
+    border-color: #4caf50;
+  }
+
+  .body-search-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+
+  .body-search-button:hover {
+    background-color: #45a049;
+  }
+}
+
+/* Styles for 600px */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .nav-links.active {
+    top: 7vh; /* Adjust position for smaller screens */
+  }
+
+  .body-search-container {
+    margin-top: 90px; /* Adjust margin for smaller screens */
+  }
+}
+
+/* Styles for 768px */
+@media (min-width: 601px) and (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1.5rem; /* Adjust padding for medium screens */
+  }
+
+  .nav-links.active {
+    top: 9vh; /* Adjust position for medium screens */
+  }
+
+  .body-search-container {
+    margin-top: 9px; /* Adjust margin for medium screens */
+  }
+}
+
+/* Styles for 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    padding: 1rem 2rem; /* Adjust padding for larger screens */
+  }
+
+  .nav-links.active {
+    top: 10vh; /* Adjust position for larger screens */
+  }
+
+  .body-search-container {
+    margin-top: 10px; /* Adjust margin for larger screens */
+  }
 }
