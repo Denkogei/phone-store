@@ -97,6 +97,7 @@ If you want to run the project locally, you'll need:
 - CSS3
 - JavaScript (ES6)
 - Font-awesome
+- Json server
 
 ## Related Repositories
 
