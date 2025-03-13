@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 
 function Navbar({ onSearch }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const location = useLocation(); // Get the current route
 
   const handleSearchChange = (e) => {
     setSearchTerm(e.target.value);
@@ -34,6 +35,9 @@ function Navbar({ onSearch }) {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  // Determine if the search bar should be hidden on mobile for specific routes
+  const hideSearchOnMobile = isMobile && (location.pathname === '/about' || location.pathname === '/add-phone');
+
   return (
     <>
       <nav className="navbar">
@@ -47,7 +51,7 @@ function Navbar({ onSearch }) {
             <li><Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link></li>
           </ul>
         </div>
-        {/* Hide search bar in navbar on mobile */}
+        {/* Hide search bar in navbar on mobile for specific routes */}
         {!isMobile && (
           <div className="navbar-right">
             <div className="search-container">
@@ -71,8 +75,8 @@ function Navbar({ onSearch }) {
         )}
       </nav>
 
-      {/* Show search bar in body part only on mobile */}
-      {isMobile && (
+      {/* Show search bar in body part only on mobile, except for About and Add Phone pages */}
+      {isMobile && !hideSearchOnMobile && (
         <div className="body-search-container">
           <input
             type="text"
