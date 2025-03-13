@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom'; // Step 1: Import useNavigate
 
 const AddPhone = () => {
   const [formData, setFormData] = useState({
@@ -8,13 +9,15 @@ const AddPhone = () => {
     price: '',
     status: 'available',
     image: '',
-    phoneNumber: '', // Add phoneNumber field to the state
+    phoneNumber: '',
   });
 
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
-  const [messageType, setMessageType] = useState(''); // success or error
+  const [messageType, setMessageType] = useState('');
   const [phoneError, setPhoneError] = useState('');
+
+  const navigate = useNavigate(); // Step 2: Get the navigate function
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,20 +25,14 @@ const AddPhone = () => {
   };
 
   const validateAndFormatPhoneNumber = (phone) => {
-    // Remove any non-numeric characters (like spaces, dashes)
     const cleanedPhone = phone.replace(/\D/g, '');
-
-    // Check if phone number starts with '0' and prepend the country code
     if (cleanedPhone.startsWith('0')) {
       return '+254' + cleanedPhone.substring(1);
     }
-
-    // If it doesn't start with '0', check if it's in international format
     if (/^\+?\d{9,15}$/.test(cleanedPhone)) {
-      return cleanedPhone; // Valid phone number, return it as is
+      return cleanedPhone;
     }
-
-    return null; // Return null if the phone number is invalid
+    return null;
   };
 
   const handleSubmit = async (e) => {
@@ -43,9 +40,8 @@ const AddPhone = () => {
     setLoading(true);
     setMessage('');
     setMessageType('');
-    setPhoneError(''); // Reset phone error
+    setPhoneError('');
 
-    // Validate and format the phone number
     const formattedPhone = validateAndFormatPhoneNumber(formData.phoneNumber);
     if (!formattedPhone) {
       setPhoneError('Invalid phone number. Please enter a valid phone number.');
@@ -53,9 +49,8 @@ const AddPhone = () => {
       return;
     }
 
-    // Proceed with the form submission
     try {
-      const data = { ...formData, phoneNumber: formattedPhone }; // Include formatted phone number in the submission
+      const data = { ...formData, phoneNumber: formattedPhone };
       await axios.post('https://phone-store-backend-626o.onrender.com/phones', data);
       setMessage('Phone added successfully!');
       setMessageType('success');
@@ -65,8 +60,13 @@ const AddPhone = () => {
         price: '',
         status: 'available',
         image: '',
-        phoneNumber: '', // Clear phoneNumber after submission
+        phoneNumber: '',
       });
+
+      // Step 3: Redirect after a short delay (e.g., 2 seconds)
+      setTimeout(() => {
+        navigate('/'); // Redirect to /phonelisting or '/'
+      }, 2000); // 2 seconds delay
     } catch (error) {
       setMessage('Failed to add phone.');
       setMessageType('error');
@@ -80,20 +80,20 @@ const AddPhone = () => {
       <style>
         {`
           .container {
-            width: 90%; /* Reduce width to 90% */
-            max-width: 400px; /* Further reduce max-width */
+            width: 90%;
+            max-width: 400px;
             margin: 0 auto;
-            padding: 20px; /* Add padding to prevent touching edges */
+            padding: 20px;
             padding-top: 12vh;
             background-color: #f9f9f9;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            overflow-x: hidden; /* Prevent horizontal overflow */
+            overflow-x: hidden;
           }
 
           .header {
             text-align: center;
-            font-size: 20px; /* Reduce font size for header */
+            font-size: 20px;
             font-weight: bold;
             margin-bottom: 20px;
           }
@@ -101,36 +101,36 @@ const AddPhone = () => {
           .form {
             display: flex;
             flex-direction: column;
-            gap: 10px; /* Reduce gap between form items */
-            width: 100%; /* Full width */
+            gap: 10px;
+            width: 100%;
           }
 
           .input, .textarea, .select {
-            padding: 8px; /* Reduce padding */
-            font-size: 14px; /* Reduce font size for inputs */
+            padding: 8px;
+            font-size: 14px;
             border: 1px solid #ccc;
             border-radius: 5px;
-            width: 90%; /* Reduce width to 90% */
-            margin: 0 auto; /* Center the form fields */
+            width: 90%;
+            margin: 0 auto;
             box-sizing: border-box;
             transition: border 0.3s;
           }
 
           .textarea {
-            height: 100px; /* Reduce height of textarea */
+            height: 100px;
           }
 
           .button {
-            padding: 10px; /* Reduce padding */
-            font-size: 14px; /* Reduce font size for button */
+            padding: 10px;
+            font-size: 14px;
             background-color: #4CAF50;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s;
-            width: 90%; /* Reduce width to 90% */
-            margin: 0 auto; /* Center the button */
+            width: 90%;
+            margin: 0 auto;
           }
 
           .button:disabled {
@@ -140,40 +140,82 @@ const AddPhone = () => {
 
           .errorMessage {
             color: red;
-            font-size: 12px; /* Reduce font size for error message */
+            font-size: 12px;
             margin-top: 5px;
-            text-align: center; /* Center the error message */
+            text-align: center;
           }
 
           .message {
+            position: fixed; /* Fixed position */
+            top: 20px; /* Position at the top */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Center horizontally */
             padding: 10px;
             border-radius: 5px;
             text-align: center;
             font-weight: bold;
-            margin-top: 20px;
-            margin: 0 auto;
-            width: 90%; /* Reduce width to 90% */
-            font-size: 14px; /* Reduce font size for message */
-            position: fixed; /* Fix the message position */
-            top: 20px; /* Position from the top */
-            left: 50%; /* Center horizontally */
-            transform: translateX(-50%); /* Center horizontally */
-            z-index: 1000; /* Ensure it appears above other elements */
+            width: 90%;
+            max-width: 400px; /* Match form width */
+            font-size: 14px;
+            z-index: 1000; /* Ensure it's above other elements */
           }
 
           @media (max-width: 600px) {
             .container {
-              padding: 10px; /* Reduce padding for smaller screens */
-              max-width: 90%; /* Reduce max-width for smaller screens */
+              padding: 10px;
+              max-width: 90%;
             }
 
             .header {
-              font-size: 18px; /* Further reduce font size for smaller screens */
+              font-size: 18px;
             }
 
             .input, .textarea, .select, .button {
-              font-size: 13px; /* Further reduce font size for inputs on smaller screens */
-              width: 90%; /* Reduce width to 90% for smaller screens */
+              font-size: 13px;
+              width: 90%;
+            }
+
+            .message {
+              top: 10px; /* Adjust top position for smaller screens */
+              font-size: 12px; /* Smaller font size for mobile */
+            }
+          }
+
+          @media (min-width: 1024px) {
+            .container {
+              max-width: 300px; /* Reduced by half */
+              padding: 15px; /* Reduced padding */
+            }
+
+            .header {
+              font-size: 22px; /* Smaller font size */
+            }
+
+            .form {
+              gap: 8px; /* Reduced gap */
+              width:600px;
+            }
+
+            .input, .textarea, .select {
+              padding: 6px; /* Reduced padding */
+              font-size: 18px; /* Smaller font size */
+            }
+
+            .textarea {
+              height: 80px; /* Reduced height */
+            }
+
+            .button {
+              padding: 8px; /* Reduced padding */
+              font-size: 18px; /* Smaller font size */
+            }
+
+            .errorMessage {
+              font-size: 11px; /* Smaller font size */
+            }
+
+            .message {
+              font-size: 12px; /* Smaller font size */
             }
           }
         `}
@@ -232,14 +274,12 @@ const AddPhone = () => {
           required
           className="input"
         />
-        {/* Show phone number error message */}
         {phoneError && <p className="errorMessage">{phoneError}</p>}
         <button type="submit" disabled={loading} className="button">
           {loading ? 'Adding...' : 'Add Phone'}
         </button>
       </form>
 
-      {/* Success or error message */}
       {message && (
         <p
           className="message"
