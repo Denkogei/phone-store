@@ -27,7 +27,7 @@ const AddPhone = () => {
 
     // Check if phone number starts with '0' and prepend the country code
     if (cleanedPhone.startsWith('0')) {
-      return '+254' + cleanedPhone.substring(1); 
+      return '+254' + cleanedPhone.substring(1);
     }
 
     // If it doesn't start with '0', check if it's in international format
@@ -76,16 +76,118 @@ const AddPhone = () => {
   };
 
   return (
-    <div style={styles.container}>
-      <h2 style={styles.header}>Add New Phone</h2>
-      <form onSubmit={handleSubmit} style={styles.form}>
+    <div className="container">
+      <style>
+        {`
+          .container {
+            width: 90%; /* Reduce width to 90% */
+            max-width: 400px; /* Further reduce max-width */
+            margin: 0 auto;
+            padding: 20px; /* Add padding to prevent touching edges */
+            padding-top: 12vh;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow-x: hidden; /* Prevent horizontal overflow */
+          }
+
+          .header {
+            text-align: center;
+            font-size: 20px; /* Reduce font size for header */
+            font-weight: bold;
+            margin-bottom: 20px;
+          }
+
+          .form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Reduce gap between form items */
+            width: 100%; /* Full width */
+          }
+
+          .input, .textarea, .select {
+            padding: 8px; /* Reduce padding */
+            font-size: 14px; /* Reduce font size for inputs */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 90%; /* Reduce width to 90% */
+            margin: 0 auto; /* Center the form fields */
+            box-sizing: border-box;
+            transition: border 0.3s;
+          }
+
+          .textarea {
+            height: 100px; /* Reduce height of textarea */
+          }
+
+          .button {
+            padding: 10px; /* Reduce padding */
+            font-size: 14px; /* Reduce font size for button */
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 90%; /* Reduce width to 90% */
+            margin: 0 auto; /* Center the button */
+          }
+
+          .button:disabled {
+            background-color: #a5d6a7;
+            cursor: not-allowed;
+          }
+
+          .errorMessage {
+            color: red;
+            font-size: 12px; /* Reduce font size for error message */
+            margin-top: 5px;
+            text-align: center; /* Center the error message */
+          }
+
+          .message {
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+            margin: 0 auto;
+            width: 90%; /* Reduce width to 90% */
+            font-size: 14px; /* Reduce font size for message */
+            position: fixed; /* Fix the message position */
+            top: 20px; /* Position from the top */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Center horizontally */
+            z-index: 1000; /* Ensure it appears above other elements */
+          }
+
+          @media (max-width: 600px) {
+            .container {
+              padding: 10px; /* Reduce padding for smaller screens */
+              max-width: 90%; /* Reduce max-width for smaller screens */
+            }
+
+            .header {
+              font-size: 18px; /* Further reduce font size for smaller screens */
+            }
+
+            .input, .textarea, .select, .button {
+              font-size: 13px; /* Further reduce font size for inputs on smaller screens */
+              width: 90%; /* Reduce width to 90% for smaller screens */
+            }
+          }
+        `}
+      </style>
+
+      <h2 className="header">Add New Phone</h2>
+      <form onSubmit={handleSubmit} className="form">
         <input
           name="name"
           value={formData.name}
           onChange={handleChange}
           placeholder="Phone Name"
           required
-          style={styles.input}
+          className="input"
         />
         <textarea
           name="description"
@@ -93,7 +195,7 @@ const AddPhone = () => {
           onChange={handleChange}
           placeholder="Description"
           required
-          style={styles.textarea}
+          className="textarea"
         />
         <input
           name="price"
@@ -102,14 +204,14 @@ const AddPhone = () => {
           type="number"
           placeholder="Price"
           required
-          style={styles.input}
+          className="input"
         />
         <select
           name="status"
           value={formData.status}
           onChange={handleChange}
           required
-          style={styles.select}
+          className="select"
         >
           <option value="available">Available</option>
           <option value="out-of-stock">Out of Stock</option>
@@ -120,7 +222,7 @@ const AddPhone = () => {
           onChange={handleChange}
           placeholder="Image URL"
           required
-          style={styles.input}
+          className="input"
         />
         <input
           name="phoneNumber"
@@ -128,13 +230,11 @@ const AddPhone = () => {
           onChange={handleChange}
           placeholder="Phone Number"
           required
-          style={styles.input}
+          className="input"
         />
         {/* Show phone number error message */}
-        {phoneError && (
-          <p style={styles.errorMessage}>{phoneError}</p>
-        )}
-        <button type="submit" disabled={loading} style={styles.button}>
+        {phoneError && <p className="errorMessage">{phoneError}</p>}
+        <button type="submit" disabled={loading} className="button">
           {loading ? 'Adding...' : 'Add Phone'}
         </button>
       </form>
@@ -142,11 +242,11 @@ const AddPhone = () => {
       {/* Success or error message */}
       {message && (
         <p
+          className="message"
           style={{
-            ...styles.message,
             backgroundColor: messageType === 'success' ? '#8dee84' : '#f8d7da',
             border: messageType === 'success' ? '1px solid green' : '1px solid red',
-            color: messageType === 'success' ? 'green' : 'red', marginTop: "15vh"
+            color: messageType === 'success' ? 'green' : 'red',
           }}
         >
           {message}
@@ -154,86 +254,6 @@ const AddPhone = () => {
       )}
     </div>
   );
-};
-
-// Styles for the form and messages
-const styles = {
-  container: {
-    maxWidth: '600px',
-    margin: '0 auto',
-    padding: '20px',
-    paddingTop: '12vh', // Add padding-top to ensure content is below navbar
-    backgroundColor: '#f9f9f9',
-    borderRadius: '8px',
-    boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
-  },
-  header: {
-    textAlign: 'center',
-    fontSize: '24px',
-    fontWeight: 'bold',
-    marginBottom: '20px',
-  },
-  form: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '15px',
-  },
-  input: {
-    padding: '10px',
-    fontSize: '16px',
-    border: '1px solid #ccc',
-    borderRadius: '5px',
-    width: '100%',
-    boxSizing: 'border-box',
-    transition: 'border 0.3s',
-  },
-  textarea: {
-    padding: '10px',
-    fontSize: '16px',
-    border: '1px solid #ccc',
-    borderRadius: '5px',
-    width: '100%',
-    height: '120px',
-    boxSizing: 'border-box',
-    transition: 'border 0.3s',
-  },
-  select: {
-    padding: '10px',
-    fontSize: '16px',
-    border: '1px solid #ccc',
-    borderRadius: '5px',
-    width: '100%',
-    boxSizing: 'border-box',
-    transition: 'border 0.3s',
-  },
-  button: {
-    padding: '12px',
-    fontSize: '16px',
-    backgroundColor: '#4CAF50',
-    color: 'white',
-    border: 'none',
-    borderRadius: '5px',
-    cursor: 'pointer',
-    transition: 'background-color 0.3s',
-  },
-  buttonDisabled: {
-    backgroundColor: '#a5d6a7',
-    cursor: 'not-allowed',
-  },
-  errorMessage: {
-    color: 'red',
-    fontSize: '14px',
-    marginTop: '5px',
-  },
-  message: {
-    padding: '10px',
-    borderRadius: '5px',
-    textAlign: 'center',
-    fontWeight: 'bold',
-    marginTop: '20px',
-    margin: '0 auto',
-    width: '100%',
-  },
 };
 
 export default AddPhone;
