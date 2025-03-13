@@ -85,6 +85,9 @@ body {
   gap: 20px;
   margin-top: 20px;
 }
+.phone-list-container {
+  padding-top: 80px; /* Default for mobile */
+}
 
 .phone-card {
   width: 450px; /* Increase the width of each card */
@@ -401,7 +404,7 @@ button:disabled {
   text-align: center;
   padding-top: 5vh; /* Reduced from 15vh */
   font-size: 2.5rem;
-  margin-bottom: 10px; /* Reduced from 20px */
+  margin-bottom: 0px; /* Reduced from 20px */
 }
 
 /* About Section */
