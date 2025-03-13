@@ -29,14 +29,43 @@ const PhoneListingPage = ({ searchTerm }) => {
     phone.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
+  // Get the height of the navbar dynamically
+  const navbarHeight = document.querySelector('nav')?.offsetHeight || 80; // Default to 80px if navbar height is not found
+
   // If loading, show loading message
   if (loading) {
-    return <div>Loading phones...</div>;
+    return (
+      <div style={{ paddingTop: `${navbarHeight + 30}px`, textAlign: 'center' }}>
+        <style>
+          {`
+            @media (max-width: 768px) {
+              div {
+                padding-top: 60px !important; /* Reduce padding for mobile */
+              }
+            }
+          `}
+        </style>
+        Loading phones...
+      </div>
+    );
   }
 
   // If error, show error message
   if (error) {
-    return <div>{error}</div>;
+    return (
+      <div style={{ paddingTop: `${navbarHeight + 20}px`, textAlign: 'center' }}>
+        <style>
+          {`
+            @media (max-width: 768px) {
+              div {
+                padding-top: 60px !important; /* Reduce padding for mobile */
+              }
+            }
+          `}
+        </style>
+        {error}
+      </div>
+    );
   }
 
   // Handle card click to navigate to phone details
@@ -46,9 +75,29 @@ const PhoneListingPage = ({ searchTerm }) => {
 
   return (
     <div>
-      <h2 style={{padding:"30px"}}>Available Phones</h2>
+      <style>
+        {`
+          @media (max-width: 768px) {
+            h2 {
+              padding-top: 60px !important; /* Reduce padding for mobile */
+            }
+          }
+        `}
+      </style>
+      <h2 style={{ padding: "30px", paddingTop: `${navbarHeight + 20}px` }}>Available Phones</h2>
       {filteredPhones.length === 0 ? (
-        <p>No phones found matching your search.</p>
+        <p style={{ paddingTop: `${navbarHeight + 20}px`, textAlign: 'center' }}>
+          <style>
+            {`
+              @media (max-width: 768px) {
+                p {
+                  padding-top: 60px !important; /* Reduce padding for mobile */
+                }
+              }
+            `}
+          </style>
+          No phones found matching your search.
+        </p>
       ) : (
         <div className="phone-list">
           {filteredPhones.map((phone) => (
